@@ -7,7 +7,7 @@
 
 body {
   font-family: "Segoe UI", sans-serif;
-  background-color:#f9f9f9;
+  background-color: #f9f9f9;
   color: #333;
   line-height: 1.6;
 }
@@ -36,14 +36,22 @@ header {
   font-weight: bold;
   display: flex;
   align-items: center;
+  gap: 12px; /* space between image and text if added */
 }
 
-.logo-icon {
-  margin-right: 8px;
+.logo-img {
+  display: block;
+  width: 130px;
+  height: 120px;
+  border-radius: 6px;
+  object-fit: contain;
+  animation: blink 5s infinite;
 }
 
-
-
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
 
 .nav-links {
   list-style: none;
@@ -145,4 +153,20 @@ footer {
   text-align: center;
   padding: 20px 0;
   font-size: 14px;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .service-cards {
+    flex-direction: column;
+  }
 }
