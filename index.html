@@ -5,27 +5,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Belotech - IT Solutions</title>
   <link rel="stylesheet" href="style.css"/>
-</head>
-<body>
-<header>
-<style>
+  <style>
     .logo-img {
       width: 130px;
       height: 120px;
-      animation: blink  infinite; -->If you want to make logo blink need to put blink 5S and opacity:5 ---->
+      animation: blink 5s infinite; /* blinking logo animation */
     }
 
     @keyframes blink {
-      0%, 100% { opacity: ; }
+      0%, 100% { opacity: 1; }
       50% { opacity: 0; }
     }
   </style>
-
+</head>
+<body>
+  <header>
     <div class="container header-container">
       <div class="logo">
-	<img src="C:\Users\jonas.belo\Downloads\Company Website\belo.jpg">
- 
-    </div>
+        <img src="images/belo.jpg" width="130" height="120" alt="Belotech Logo" class="logo-img" />
+      </div>
 
       <nav>
         <ul class="nav-links">
@@ -33,51 +31,57 @@
           <li><a href="#services">Services</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#contact">Contact</a></li>
-	  <li><a href="#contact">Map</a></li>
+          <li><a href="#map">Map</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-
   <section class="hero" id="home">
     <div class="container">
-<p style="color:white;font-size:100%;margin-left:5px;"><marquee direction="right" behavior="alternate"style="border:white 2px solid"><b>Belotech IT Solutions Provider</b></p></h1></head></marquee>
-      <div align="justify">We provide comprehensive IT setup and support services tailored to meet our clients' evolving needs. Our team installs desktop computers, laptops, Windows operating systems, and application or software clients to ensure seamless user experiences. We also deploy Windows Server editions, including 2012, 2016, and 2019, to establish a robust and secure foundation for network and system infrastructure. To enhance virtualization and resource management, we configure VMware environments and install Active Directory services, enabling clients to efficiently manage their users, devices, and network resources.</p><justify>
-
-      <a href="#contact" class="btn">Let's Talk</a>
+      <marquee direction="right" behavior="alternate" style="border: white 2px solid; margin-left: 5px;">
+        <p style="color: white; font-weight: bold;">Belotech IT Solutions Provider</p>
+      </marquee>
+      <div style="text-align: justify; color: white;">
+        <p>
+          We provide comprehensive IT setup and support services tailored to meet our clients' evolving needs. Our team installs desktop computers, laptops, Windows operating systems, and application or software clients to ensure seamless user experiences. We also deploy Windows Server editions, including 2012, 2016, and 2019, to establish a robust and secure foundation for network and system infrastructure. To enhance virtualization and resource management, we configure VMware environments and install Active Directory services, enabling clients to efficiently manage their users, devices, and network resources.
+        </p>
+        <a href="#contact" class="btn">Let's Talk</a>
+      </div>
     </div>
   </section>
+
   <section class="services" id="services">
     <div class="container">
       <h2>Our Services</h2>
       <div class="service-cards">
         <div class="card">
-          <h3>Managed IT</h3></font>
+          <h3>Managed IT</h3>
           <p>Complete IT support & maintenance tailored to your business needs.</p>
         </div>
         <div class="card">
           <h3>Cloud Solutions</h3>
           <p>Seamless cloud migration and management to improve scalability.</p>
         </div>
+      </div>
     </div>
   </section>
-
 
   <section class="about" id="about">
     <div class="container">
       <h2>About Belotech</h2>
-      <p div align="justify">Belotech is a trusted IT services provider committed to helping customers harness the full potential of technology to drive growth and innovation. With more than two years of experience delivering IT services to clients, we offer tailored solutions that are both scalable and secure, enabling businesses to confidently adapt to changing demands. From infrastructure support to advanced systems integration, our expertise empowers organizations to enhance efficiency, strengthen operations, and achieve long-term success in an increasingly digital world.</p>
+      <p style="text-align: justify;">
+        Belotech is a trusted IT services provider committed to helping customers harness the full potential of technology to drive growth and innovation. With more than two years of experience delivering IT services to clients, we offer tailored solutions that are both scalable and secure, enabling businesses to confidently adapt to changing demands. From infrastructure support to advanced systems integration, our expertise empowers organizations to enhance efficiency, strengthen operations, and achieve long-term success in an increasingly digital world.
+      </p>
     </div>
   </section>
- 
+
   <section class="contact" id="contact">
     <div class="container">
       <h2>Contact Us</h2>
-
-      <p><b>Email: <a href="mailto:belojonas810@gmail.com">belojonas810@gmail.com</a></p></b>
-      <p><b>Phone: +670 78294659</p></b>
-      <p><b>Location: Dili, Comoro - Kampung Baru</p></b>
+      <p><b>Email:</b> <a href="mailto:belojonas810@gmail.com">belojonas810@gmail.com</a></p>
+      <p><b>Phone:</b> +670 78294659</p>
+      <p><b>Location:</b> Dili, Comoro - Kampung Baru</p>
     </div>
   </section>
 
@@ -86,9 +90,5 @@
       <p>&copy; 2025 Belotech. All rights reserved.</p>
     </div>
   </footer>
-
 </body>
 </html>
-
-
-
